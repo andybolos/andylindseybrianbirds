@@ -1,0 +1,10 @@
+<div style="display: inline-block; border: 1px solid black">
+  <div ng-repeat="bird in birds" ng-click="addBird(bird)">
+    <h1>{{bird.name}}</h1>
+  </div>
+</div>
+<div style="display: inline-block; border: 1px solid black">
+  <div ng-click="setCurrent(user)" ng-repeat="user in users" style="display: inline-block; border: 1px solid black" ng-style="isCurrent(user)">
+    <h1>{{user.name}}</h1>
+  </div>
+</div>

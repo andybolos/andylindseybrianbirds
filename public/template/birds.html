@@ -1,0 +1,21 @@
+<div style="display: inline-block; width: 49%">
+  <h1>Bird Searching</h1>
+  <select style="font-size: 6rem" ng-model="searchProp" ng-options="bird.prop as bird.label for bird in birdDescrip"></select>
+  <input style="font-size: 2rem" ng-model="search[searchProp]" placeholder="Search Birds"/>
+  <h1>Bird Results</h1>
+  <div ng-repeat="bird in birds">
+    <h2>{{bird.name}}</h2>
+    <h3>{{bird.color}}</h3>
+    <h3>{{bird.smell}}</h3>
+  </div>
+</div>
+<div style="display: inline-block; width: 50%">
+  <h1>New Bird</h1>
+  <form ng-submit="newBird(bird)" class="newBird">
+    <input style="font-size: 2rem" ng-model="bird.name" placeholder="Bird Name" required />
+    <input style="font-size: 2rem" ng-model="bird.color" placeholder="Bird Color" required/>
+    <input style="font-size: 2rem" ng-model="bird.smell" placeholder="Bird Smell" required/>
+    <button style="display: none;" type="submit"></button>
+  </form>
+
+</div>

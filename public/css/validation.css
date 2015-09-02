@@ -1,0 +1,7 @@
+.ng-invalid-required.ng-dirty:not(form) {
+  border: 3px solid hsl(0, 70%, 75%);
+}
+
+.newBird > .ng-valid {
+  border: 3px solid hsl(160, 70%, 75%)
+}

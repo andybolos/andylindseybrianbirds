@@ -1,0 +1,7 @@
+<h1>New User</h1>
+<h2 ng-show="saving">Saving</h2>
+<form class="newBird" ng-submit="newUser(user)">
+  <input style="font-size: 2rem" ng-model="user.name" placeholder="User Name" required/>
+  <input style="font-size: 2rem" ng-model="user.email" placeholder="User Email" required/>
+  <button type="submit" style="display: none"></button>
+</form>
